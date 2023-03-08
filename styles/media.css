@@ -1,5 +1,44 @@
+@media screen and (max-width: 992px) {
+  .hero__info-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .hero__info-image {
+    width: 368px;
+  }
+
+  .product__cards {
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product__card:nth-child(3) {
+    grid-column: 1/-1;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header__phones {
     display: none;
   }
+
+  .header__address-select {
+    font-size: 12px;
+  }
+
+  .hero__header-menu {
+    display: none;
+  }
+
+  .product__cards {
+    max-width: 594px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 321px) {
 }
