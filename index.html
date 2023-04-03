@@ -54,7 +54,7 @@
                  4.08 0 0 1 7.5 3.52a4.08 4.08 0 0 1 4.05 4.13c0 2.28-1.81 4.12-4.05 4.12Z"
               />
             </svg>
-            <select class="header__address-select">
+            <select class="header__address-select select">
               <option value="">ваш город</option>
               <option value="Нижний Новгород">Нижний Новгород</option>
               <option value="Москва">Москва</option>
@@ -121,8 +121,7 @@
           <div class="hero__info">
             <div class="hero__info-text">
               <h1 class="hero__info-title">
-                Инновационные коврики <br />
-                для автомобиля
+                Инновационные коврики для автомобиля
               </h1>
               <span class="hero__info-description">в вашем городе</span>
               <a class="hero__info-link" href="#">ЗАКАЗАТЬ</a>
@@ -138,9 +137,7 @@
       <section class="product">
         <div class="container">
           <div class="product__inner">
-            <h2 class="product__title">
-              Что такое <span class="product__title-blue">EVA</span> коврики?
-            </h2>
+            <h2 class="product__title">Что такое EVA коврики?</h2>
             <ul class="product__cards">
               <li class="product__card">
                 <img
@@ -232,7 +229,81 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">lieurgh;aierugh</div>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__social footer__column">
+            <h3 class="footer__title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+            <a class="footer__social-link" href="#"
+              ><img src="images/icons/instagram-color.svg" alt="Инстаграм."
+            /></a>
+          </div>
+          <div class="footer__contacts footer__column">
+            <h3 class="footer__title">КОНТАКТНЫЕ ТЕЛЕФОНЫ</h3>
+            <a class="footer__phone" href="tel:+375 29 292-29-29"
+              >+375 29 292-29-29 (VEL)</a
+            >
+            <a class="footer__phone" href="tel:+375 33 333-33-33"
+              >+375 33 333-33-33 (МТС)</a
+            >
+          </div>
+          <div class="footer__about-us footer__column">
+            <h3 class="footer__title">О НАС</h3>
+            <p class="footer__about-us-text">
+              Индивидуальное изготовление EVA ковриков для вашего автомобиля ваш
+            </p>
+            <select class="footer__about-us-select select">
+              <option value="">ваш город</option>
+              <option value="Нижний Новгород">Нижний Новгород</option>
+              <option value="Москва">Москва</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Форма заявки</h2>
+          <form class="modal-form" action="#" method="post">
+            <div class="modal-form-inline">
+              <label class="visually-hidden" for="modal-form-name">Имя</label>
+              <input
+                class="modal-form-input"
+                type="text"
+                name="modal-form-name"
+                id="modal-form-name"
+                placeholder="Ваше имя"
+                required
+              />
+              <label class="visually-hidden" for="modal-form-email"
+                >E-mail.</label
+              >
+              <input
+                class="modal-form-input"
+                type="email"
+                name="modal-form-email"
+                id="modal-form-email"
+                placeholder="Ваш e-mail"
+                required
+              />
+            </div>
+            <label class="visually-hidden" for="modal-form-text">Текст</label>
+            <textarea
+              class="modal-form-input modal-form-input-text"
+              type="text"
+              name="modal-form-text"
+              id="modal-form-text"
+              placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+            >
+Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)
+            </textarea>
+            <button class="modal-form-submit" type="submit">отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
